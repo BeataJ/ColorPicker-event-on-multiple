@@ -8,3 +8,5 @@ const colors = [
   "indigo",
   "violet"
 ];
+
+const container = document.querySelector("#boxes");
