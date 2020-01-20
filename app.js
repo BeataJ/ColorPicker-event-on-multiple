@@ -10,3 +10,9 @@ const colors = [
 ];
 
 const container = document.querySelector("#boxes");
+
+for (let color of colors) {
+  const box = document.createElement("div");
+  box.style.backgroundColor = color;
+  container.append(box);
+}
