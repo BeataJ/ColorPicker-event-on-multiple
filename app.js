@@ -16,4 +16,7 @@ for (let color of colors) {
   box.style.backgroundColor = color;
   box.classList.add("box");
   container.append(box);
+  box.addEventListener("click", function() {
+    console.log("CLICKED A BOX");
+  });
 }
