@@ -9,6 +9,9 @@ const colors = [
   "violet"
 ];
 
+const printColor = function(box) {
+  console.log(box.style.backgroundColor);
+};
 const container = document.querySelector("#boxes");
 
 for (let color of colors) {
@@ -17,6 +20,6 @@ for (let color of colors) {
   box.classList.add("box");
   container.append(box);
   box.addEventListener("click", function() {
-    console.log(box.style.backgroundColor);
+    printColor(box);
   });
 }
