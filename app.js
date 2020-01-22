@@ -9,7 +9,8 @@ const colors = [
   "violet"
 ];
 
-const changeColor = function() {
+const changeColor = function(e) {
+  console.log(e);
   const h1 = document.querySelector("h1");
   h1.style.color = this.style.backgroundColor;
 };
