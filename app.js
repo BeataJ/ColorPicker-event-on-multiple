@@ -23,3 +23,7 @@ for (let color of colors) {
   container.append(box);
   box.addEventListener("click", changeColor);
 }
+
+document.body.addEventListener("keypress", function(e) {
+  console.log(e);
+});
